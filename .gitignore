@@ -1,0 +1,20 @@
+# Credentials and captured sessions
+.env
+.env.*
+!.env.example
+*.har
+Integration FLOW/har/*.zip
+Integration FLOW/har/**/*.har
+
+# Local and generated files
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+runs/
+*.log
+*.swp
+*.bak
+*.inspect.ndjson
+node_modules
