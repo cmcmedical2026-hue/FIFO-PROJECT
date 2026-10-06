@@ -1,0 +1,305 @@
+{
+ "_doc": "Lot assignments decided by hand, keyed OPCODE:DOCNO:ITEM -> lots [[lot, qty], ...] and optionally cost. Each entry says why.",
+ "overrides": {
+  "STRIN2:125:105": {
+   "lots": [
+    [
+     "36112025003",
+     1344
+    ],
+    [
+     "36112025017",
+     224
+    ],
+    [
+     "36112025004",
+     448
+    ]
+   ],
+   "why": "no remark; split read from the 01-07 count (1344+21, 5017, 5004) — sums to 2016"
+  },
+  "STRIN2:125:106": {
+   "lots": [
+    [
+     "36132025002",
+     200
+    ],
+    [
+     "36132025003",
+     448
+    ]
+   ],
+   "why": "no remark; 01-07 count shows 24+200 and 163+448"
+  },
+  "STRIN2:125:107": {
+   "lots": [
+    [
+     "36122025004",
+     672
+    ]
+   ],
+   "why": "no remark; 01-07 count shows 169+448 on 20-11-2028, rest same lot"
+  },
+  "STRIN2:125:108": {
+   "lots": [
+    [
+     "36142025001",
+     224
+    ]
+   ],
+   "why": "only lot of 108 in stock until 30-08"
+  },
+  "STRIN2:136:101": {
+   "lots": [
+    [
+     "36052025002",
+     15
+    ],
+    [
+     "36052024003",
+     3
+    ]
+   ],
+   "why": "remark: (15) 18-01-2028 36052025002 (3) 17-07-2027"
+  },
+  "STRMRT:130:105": {
+   "lots": [
+    [
+     "36112025001",
+     21
+    ],
+    [
+     "36112024001",
+     3
+    ]
+   ],
+   "why": "remark: (21) 3/1/2028 36112025001 (3) 8/1/2027 36112024001"
+  },
+  "STRMRT:128:75": {
+   "lots": [
+    [
+     "0469-E3",
+     48
+    ],
+    [
+     "0505-E2",
+     2
+    ]
+   ],
+   "why": "remark: 0469-E3 (48) 0505-E2 (2). Flow-reported invoice cost 560 is retained only as reference; it is not purchase-cost evidence. Assess only from a traceable purchase batch, otherwise leave unresolved."
+  },
+  "STROUT:901:75": {
+   "lots": [
+    [
+     "0469-E3",
+     19
+    ],
+    [
+     "0505-E2",
+     1
+    ]
+   ],
+   "why": "remark: (19) 0469-E3 (1) 0505-E2"
+  },
+  "STROUT:921:75": {
+   "lots": [
+    [
+     "0469-E3",
+     8
+    ],
+    [
+     "0505-E2",
+     122
+    ]
+   ],
+   "why": "Assessed 2026-10-04 from approved June count (2 old, 6 new), July return 137 (8 old), purchase receipts 126/128, subsequent August remarks and zero August count. Original STROUT 921 remark says 18 old / 112 new and remains unchanged in Flow and the source column. Cost layers: 8 at 560; 122 at 850."
+  },
+  "STROUT:949:75": {
+   "lots": [
+    [
+     "0505-E2",
+     27
+    ],
+    [
+     "0469-E3",
+     6
+    ]
+   ],
+   "why": "Remark: 27 0505-E2 / 6 0469-E3. Reconciles with approved June and August counts after assessed STROUT 921 split. Cost layers: 27 at 850; 6 at 560 (2026-10-04)."
+  },
+  "STROUT:972:75": {
+   "lots": [
+    [
+     "0505-E2",
+     20
+    ],
+    [
+     "0469-E3",
+     1
+    ]
+   ],
+   "why": "remark: (20) 2525-E2 [=0505-E2] (1) 0469-E3"
+  },
+  "STROUT:876:105": {
+   "lots": [
+    [
+     "36112025001",
+     36
+    ],
+    [
+     "36112025004",
+     14
+    ]
+   ],
+   "why": "remark: 36 of 3/1/2028, 14 of 22/3/2028"
+  },
+  "STROUT:918:105": {
+   "lots": [
+    [
+     "36112025001",
+     21
+    ],
+    [
+     "36112025004",
+     51
+    ]
+   ],
+   "why": "remark: 3/1/2028 (21), 22/3/2028 (51)"
+  },
+  "STROUT:927:105": {
+   "lots": [
+    [
+     "36112024001",
+     3
+    ],
+    [
+     "36112025017",
+     1
+    ]
+   ],
+   "why": "remark: 8/1/2027 (3), 25/11/2028 (10?) — line qty is 4"
+  },
+  "STROUT:961:108": {
+   "lots": [
+    [
+     "36142025001",
+     20
+    ]
+   ],
+   "why": "remark: (17) 7/1/2028, (3) 17/3/2028 — both are 36142025001 per the 31-08 count (user 24-09)"
+  },
+  "STROUT:977:101": {
+   "lots": [
+    [
+     "36052024003",
+     1
+    ],
+    [
+     "36052025002",
+     1
+    ]
+   ],
+   "why": "remark: (1) 17/7/2027 (1) 18/1/2028"
+  },
+  "STRMRT:159:105": {
+   "lots": [
+    [
+     "36112025003",
+     24
+    ],
+    [
+     "36112025001",
+     84
+    ]
+   ],
+   "why": "remark: (24) 15/3/2028 (84) 3/1/2028"
+  },
+  "STRMRT:152:106": {
+   "lots": [
+    [
+     "36132025002",
+     6
+    ],
+    [
+     "36132025003",
+     6
+    ]
+   ],
+   "why": "remark: (6) 10/1/2028 (6) 18/3/2028"
+  },
+  "STRMRT:150:101": {
+   "lots": [
+    [
+     "36052025004",
+     2
+    ],
+    [
+     "36052025003",
+     1
+    ]
+   ],
+   "why": "remark: (2) 3/6/2028 3605205004 (1) 15/3/2028"
+  },
+  "STRMRT:151:101": {
+   "lots": [
+    [
+     "36052025009",
+     1
+    ]
+   ],
+   "why": "return of STROUT 920 (inv 934) — 20/11/2028 36052025009 per remark"
+  },
+  "STROUT:920:101": {
+   "lots": [
+    [
+     "36052025009",
+     2
+    ],
+    [
+     "36052025003",
+     1
+    ]
+   ],
+   "why": "remark: 20/11/2028 (2), 15/3/2028 (1)"
+  },
+  "STRIN2:119:101": {
+   "lots": [
+    [
+     "36052025003",
+     6
+    ],
+    [
+     "36052025009",
+     6
+    ]
+   ],
+   "why": "remark: (6) 15/3/2028 36052025003 (6) 20/11/2028"
+  },
+  "STRMRT:138:144": {
+   "flow_reported_cost": 335,
+   "why": "Flow-reported invoice cost 335 is retained only as reference, not actual purchase cost. Assess only from a traceable purchase batch, otherwise leave unresolved."
+  },
+  "STRMRT:137:75": {
+   "flow_reported_cost": 560,
+   "why": "Flow-reported invoice cost 560 is retained only as reference, not actual purchase cost. Assess only from a traceable purchase batch, otherwise leave unresolved."
+  },
+  "STRMRT:142:75": {
+   "flow_reported_cost": 560,
+   "why": "Flow-reported invoice cost 560 is retained only as reference, not actual purchase cost. Assess only from a traceable purchase batch, otherwise leave unresolved."
+  },
+  "STRMRT:146:75": {
+   "flow_reported_cost": 560,
+   "why": "Flow-reported invoice cost 560 is retained only as reference, not actual purchase cost. Assess only from a traceable purchase batch, otherwise leave unresolved."
+  },
+  "STRIN9:87:75": {
+   "lots": [
+    [
+     "0469-E3",
+     10
+    ]
+   ],
+   "cost": 560,
+   "why": "تكلفة التحويل 560 من نفس لوط وصلاحية الافتتاحي؛ إذن الصرف المقابل من 2025 قبل الافتتاحي."
+  }
+ }
+}

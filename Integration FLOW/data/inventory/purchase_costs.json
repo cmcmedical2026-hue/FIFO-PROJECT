@@ -1,0 +1,4 @@
+{
+  "_doc": "Optional legacy purchase records. Flow STRIN2 ITPRICE/pr is the actual incoming purchase cost per General Manager instruction 2026-09-28; a separate invoice match is not required. Calculated movement costs always follow sheet opening/purchase batches by item, lot and expiry.",
+  "records": {}
+}

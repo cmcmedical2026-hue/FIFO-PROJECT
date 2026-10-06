@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-04",
+  "item": "75",
+  "approved_june_count_sha256": "9bf0a065ed5bcb99496632603a41ab15fbcd133a261feacfd02bcf0a54207160",
+  "approved_june_count": {
+    "0469-E3": 2,
+    "0505-E2": 6
+  },
+  "older_count_file_disagreement": "The previous normalized count file used zero because the old-lot row looked crossed out. The later approved CSV and live June count tab use 2, matching Flow quantity 8; the normalized count was updated with this source distinction.",
+  "august_count": {
+    "0469-E3": 0,
+    "0505-E2": 0
+  },
+  "movement_ledger": [
+    {
+      "movement": "STRIN2 126",
+      "0469-E3": 2,
+      "0505-E2": 126
+    },
+    {
+      "movement": "STROUT 912",
+      "0469-E3": 2,
+      "0505-E2": 16
+    },
+    {
+      "movement": "STRMRT 137",
+      "0469-E3": 10,
+      "0505-E2": 16
+    },
+    {
+      "movement": "STRIN2 128",
+      "0469-E3": 10,
+      "0505-E2": 146
+    },
+    {
+      "movement": "STROUT 921",
+      "0469-E3": 2,
+      "0505-E2": 24
+    },
+    {
+      "movement": "STRMRT 142",
+      "0469-E3": 21,
+      "0505-E2": 24
+    },
+    {
+      "movement": "STROUT 936",
+      "0469-E3": 11,
+      "0505-E2": 24
+    },
+    {
+      "movement": "STROUT 938",
+      "0469-E3": 11,
+      "0505-E2": 14
+    },
+    {
+      "movement": "STRMRT 146",
+      "0469-E3": 16,
+      "0505-E2": 14
+    },
+    {
+      "movement": "STROUT 948",
+      "0469-E3": 6,
+      "0505-E2": 14
+    },
+    {
+      "movement": "STRIN2 133",
+      "0469-E3": 6,
+      "0505-E2": 34
+    },
+    {
+      "movement": "STROUT 949",
+      "0469-E3": 0,
+      "0505-E2": 7
+    },
+    {
+      "movement": "STROUT 950",
+      "0469-E3": 0,
+      "0505-E2": 1
+    },
+    {
+      "movement": "STROUT 953",
+      "0469-E3": 0,
+      "0505-E2": 0
+    }
+  ],
+  "decisions": [
+    {
+      "month": "2026-07",
+      "sheet": "حركات يوليو",
+      "sheet_row": 82,
+      "lot": "0469-E3 (8)؛ 0505-E2 (122)",
+      "expiry": "2026-11-25 (8)؛ 2027-09-04 (122)",
+      "cost": 832.1538461538462,
+      "cost_expr": "(2*'حركات يناير'!O110+6*'حركات يوليو'!O57+16*'حركات يوليو'!K50+106*'حركات يوليو'!K70)/G82",
+      "value": 108180.0,
+      "basis": "تخصيص مستنتج من جرد يونيو المعتمد وتسلسل الدفعات وجرد أغسطس: 8 من 0469-E3 بسعر 560 (2 من رصيد يونيو و6 من مرتجع 137)، و122 من 0505-E2 بسعر 850 (16 من إضافة 126 و106 من إضافة 128). ملاحظة المستند الأصلية 18 قديم/112 جديد تختلف عن التخصيص؛ لم تُستخدم تكلفة Flow المحسوبة",
+      "cost_parts": [
+        {
+          "qty": 2,
+          "cost": 560,
+          "expr": "'حركات يناير'!O110",
+          "lot": "0469-E3",
+          "exp": "2026-11-25",
+          "basis": "رصيد يونيو من مرتجع 128 المرتبط بصرف 748"
+        },
+        {
+          "qty": 6,
+          "cost": 560,
+          "expr": "'حركات يوليو'!O57",
+          "lot": "0469-E3",
+          "exp": "2026-11-25",
+          "basis": "مرتجع 137 المرتبط بصرف 538"
+        },
+        {
+          "qty": 16,
+          "cost": 850,
+          "expr": "'حركات يوليو'!K50",
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "basis": "متبقي إضافة الموردين 126"
+        },
+        {
+          "qty": 106,
+          "cost": 850,
+          "expr": "'حركات يوليو'!K70",
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "basis": "إضافة الموردين 128"
+        }
+      ],
+      "decision_date": "2026-10-04",
+      "document": 921,
+      "source_remark": "التوريد غدا مستشفى القطامية كلينيك الساعة 12 \nالتحصيل شهرين \n(18)  25/11/2026  0469-E3\n(112)  4/9/2027    0505-E2"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "sheet_row": 71,
+      "lot": "0505-E2 (27)؛ 0469-E3 (6)",
+      "expiry": "2027-09-04 (27)؛ 2026-11-25 (6)",
+      "cost": 797.2727272727273,
+      "cost_expr": "(14*'حركات يوليو'!K70+13*'حركات أغسطس'!K70+1*'حركات أغسطس'!O12+5*'حركات أغسطس'!O31)/G71",
+      "value": 26310.0,
+      "basis": "تخصيص 949 مطابق لملاحظة المستند ومتسق مع جرد أغسطس بعد تصحيح تخصيص 921: 6 من 0469-E3 بسعر 560 (1 من مرتجع 142 و5 من مرتجع 146)، و27 من 0505-E2 بسعر 850 (14 من إضافة 128 و13 من إضافة 133). التكلفة من دفعات الشيت، لا من COST أو سعر الصرف في Flow",
+      "cost_parts": [
+        {
+          "qty": 14,
+          "cost": 850,
+          "expr": "'حركات يوليو'!K70",
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "basis": "متبقي إضافة الموردين 128"
+        },
+        {
+          "qty": 13,
+          "cost": 850,
+          "expr": "'حركات أغسطس'!K70",
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "basis": "إضافة الموردين 133"
+        },
+        {
+          "qty": 1,
+          "cost": 560,
+          "expr": "'حركات أغسطس'!O12",
+          "lot": "0469-E3",
+          "exp": "2026-11-25",
+          "basis": "مرتجع 142 المرتبط بصرف 801"
+        },
+        {
+          "qty": 5,
+          "cost": 560,
+          "expr": "'حركات أغسطس'!O31",
+          "lot": "0469-E3",
+          "exp": "2026-11-25",
+          "basis": "مرتجع 146 المرتبط بصرف 644"
+        }
+      ],
+      "decision_date": "2026-10-04",
+      "document": 949,
+      "source_remark": "(27)       4/9/2027    0505-E2\n(6)      25/11/2026     0469-E3"
+    }
+  ],
+  "sheet_verified": {
+    "spreadsheet_id": "1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44",
+    "july_row": 82,
+    "july_value": 108180,
+    "august_row": 71,
+    "august_value": 26310,
+    "july_summary_cogs": 1725231.9963,
+    "august_summary_cogs": 1578675.456,
+    "method": "Google Sheets connected API CellData after write; no browser capture"
+  },
+  "source_preservation": "Flow documents, source CSVs, purchase prices, quantities and original remarks were not edited.",
+  "other_open_items": "Other item/lot discrepancies, including item 144, remain outside this resolution."
+}

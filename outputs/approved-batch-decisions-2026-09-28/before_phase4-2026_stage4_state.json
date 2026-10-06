@@ -1,0 +1,277 @@
+{
+  "stage": 4,
+  "status": "implemented_with_open_cost_and_lot_items",
+  "spreadsheet_id": "1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44",
+  "url": "https://docs.google.com/spreadsheets/d/1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44/edit",
+  "scope": {
+    "company": 1,
+    "store": 1,
+    "from": "2026-07-01",
+    "to": "2026-08-31"
+  },
+  "movement_lines": 255,
+  "month_rows": {
+    "2026-07": 119,
+    "2026-08": 136
+  },
+  "june_qty": 8195.0,
+  "aug_qty": 7054.0,
+  "count_file": "جرد 31-08-2026.csv",
+  "count_sha256": "eef4206f95c8734d256d0edc7784b8265c96b7477980b4dbc501443ac57f1c99",
+  "cost_missing_lines": [
+    {
+      "month": "2026-07",
+      "sheet": "حركات يوليو",
+      "row": 57,
+      "op": "STRMRT",
+      "doc": 137,
+      "item": "75",
+      "qty": 8.0,
+      "basis": "تكلفة دفعة الحركة غير محسومة من الشيت باللوط والصلاحية"
+    },
+    {
+      "month": "2026-07",
+      "sheet": "حركات يوليو",
+      "row": 82,
+      "op": "STROUT",
+      "doc": 921,
+      "item": "75",
+      "qty": 130.0,
+      "basis": "دفعة صرف STROUT 748 من الشيت؛ تكلفة دفعة الحركة غير محسومة من الشيت باللوط والصلاحية؛ دفعة الحركة غير محسومة باللوط والصلاحية؛ تكلفة شراء فعلية من Flow؛ إذن إضافة موردين 126؛ تكلفة شراء فعلية من Flow؛ إذن إضافة موردين 128"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "row": 31,
+      "op": "STRMRT",
+      "doc": 146,
+      "item": "75",
+      "qty": 5.0,
+      "basis": "تكلفة دفعة الحركة غير محسومة من الشيت باللوط والصلاحية"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "row": 69,
+      "op": "STROUT",
+      "doc": 948,
+      "item": "75",
+      "qty": 10.0,
+      "basis": "دفعة صرف STROUT 802 من الشيت؛ تكلفة دفعة الحركة غير محسومة من الشيت باللوط والصلاحية"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "row": 71,
+      "op": "STROUT",
+      "doc": 949,
+      "item": "75",
+      "qty": 33.0,
+      "basis": "تكلفة شراء فعلية من Flow؛ إذن إضافة موردين 128؛ تكلفة شراء فعلية من Flow؛ إذن إضافة موردين 133؛ تكلفة دفعة الحركة غير محسومة من الشيت باللوط والصلاحية؛ دفعة الحركة غير محسومة باللوط والصلاحية"
+    }
+  ],
+  "lot_missing_lines": [
+    {
+      "month": "2026-07",
+      "sheet": "حركات يوليو",
+      "row": 119,
+      "op": "STRROT",
+      "doc": 26,
+      "item": "101",
+      "qty": 1.0,
+      "reason": "غير محدد"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "row": 20,
+      "op": "STROUT",
+      "doc": 937,
+      "item": "101",
+      "qty": 2.0,
+      "reason": "أكثر من لوط؛ الكمية غير محددة"
+    },
+    {
+      "month": "2026-08",
+      "sheet": "حركات أغسطس",
+      "row": 88,
+      "op": "STRIN2",
+      "doc": 134,
+      "item": "BATTERY",
+      "qty": 3.0,
+      "reason": "صلاحية من حركة المشتريات؛ اللوط غير متاح"
+    }
+  ],
+  "prior_lot_fills": [
+    {
+      "sheet": "حركات أبريل",
+      "row": 4,
+      "op": "STROU9",
+      "doc": 163,
+      "item": "100",
+      "qty": 10.0,
+      "lot": "0823020",
+      "exp": "7-2026",
+      "why": "لوط وحيد متطابق في جرد فبراير ويونيو وأغسطس"
+    },
+    {
+      "sheet": "حركات أبريل",
+      "row": 8,
+      "op": "STRIN9",
+      "doc": 83,
+      "item": "100",
+      "qty": 10.0,
+      "lot": "0823020",
+      "exp": "7-2026",
+      "why": "لوط وحيد متطابق في جرد فبراير ويونيو وأغسطس"
+    },
+    {
+      "sheet": "حركات أبريل",
+      "row": 118,
+      "op": "STRMR",
+      "doc": 49,
+      "item": "100",
+      "qty": 2.0,
+      "lot": "0823020",
+      "exp": "7-2026",
+      "why": "لوط وحيد متطابق في جرد فبراير ويونيو وأغسطس"
+    },
+    {
+      "sheet": "حركات أبريل",
+      "row": 121,
+      "op": "STRMAK",
+      "doc": 212,
+      "item": "100",
+      "qty": 2.0,
+      "lot": "0823020",
+      "exp": "7-2026",
+      "why": "لوط وحيد متطابق في جرد فبراير ويونيو وأغسطس"
+    }
+  ],
+  "approved_corrections": [
+    "QEIC -> QELC and QEIC6035B -> QELC 6035B",
+    "108 August count expiry and lot per prior approved decision"
+  ],
+  "reconciliation": "255 new movement lines match Flow row for row; August count 7054 equals June balance 8195 plus Flow net -1141 for all items",
+  "visual_verification": "Google Sheets API styles and formats only; browser capture prohibited by project AGENTS.md",
+  "flow_modified": false,
+  "source_modified": false,
+  "cost_rule_date": "2026-09-28",
+  "cost_methodology": "Actual incoming Flow STRIN2 ITPRICE/pr; all calculated costs use opening/purchase sheet cells by item, lot and expiry. Flow COST is never used.",
+  "cost_correction_verified": true,
+  "cost_correction_report": "outputs/cost-rule-2026-09-28/correction.json",
+  "cost_correction_summary": {
+    "2026-07:STRIN9": {
+      "lines": 8,
+      "qty": 106.0,
+      "value": 109600.0,
+      "missing": 0,
+      "docs": 3
+    },
+    "2026-07:STROU9": {
+      "lines": 11,
+      "qty": 54.0,
+      "value": 71100.0,
+      "missing": 0,
+      "docs": 8
+    },
+    "2026-07:STROUT": {
+      "lines": 71,
+      "qty": 2530.0,
+      "value": 1617051.9963,
+      "missing": 1,
+      "docs": 27
+    },
+    "2026-07:STRMRT": {
+      "lines": 18,
+      "qty": 375.0,
+      "value": 259375.0,
+      "missing": 1,
+      "docs": 8
+    },
+    "2026-07:STRIN2": {
+      "lines": 8,
+      "qty": 1457.0,
+      "value": 795130.0015,
+      "missing": 0,
+      "docs": 7
+    },
+    "2026-07:BURRET": {
+      "lines": 1,
+      "qty": 10.0,
+      "value": 8800.0,
+      "missing": 0,
+      "docs": 1
+    },
+    "2026-07:STRROT": {
+      "lines": 1,
+      "qty": 1.0,
+      "value": 12500.0,
+      "missing": 0,
+      "docs": 1
+    },
+    "2026-07:STRRTS": {
+      "lines": 1,
+      "qty": 1.0,
+      "value": 12500.0,
+      "missing": 0,
+      "docs": 1
+    },
+    "2026-08:STROUT": {
+      "lines": 77,
+      "qty": 2109.0,
+      "value": 1546765.456,
+      "missing": 2,
+      "docs": 34
+    },
+    "2026-08:STRMRT": {
+      "lines": 25,
+      "qty": 394.0,
+      "value": 436625.0,
+      "missing": 1,
+      "docs": 13
+    },
+    "2026-08:STROU9": {
+      "lines": 9,
+      "qty": 37.0,
+      "value": 37805.0,
+      "missing": 0,
+      "docs": 6
+    },
+    "2026-08:STRIN9": {
+      "lines": 6,
+      "qty": 29.0,
+      "value": 30100.0,
+      "missing": 0,
+      "docs": 5
+    },
+    "2026-08:STRMAK": {
+      "lines": 6,
+      "qty": 10.0,
+      "value": 7271.8182,
+      "missing": 0,
+      "docs": 4
+    },
+    "2026-08:STRIN2": {
+      "lines": 11,
+      "qty": 1257.0,
+      "value": 1075902.0,
+      "missing": 0,
+      "docs": 5
+    },
+    "2026-08:BURRET": {
+      "lines": 1,
+      "qty": 10.0,
+      "value": 8800.0,
+      "missing": 0,
+      "docs": 1
+    },
+    "2026-08:STRMR": {
+      "lines": 1,
+      "qty": 1.0,
+      "value": 700.0,
+      "missing": 0,
+      "docs": 1
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "operations": {
+    "PRCINV": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Accounts/Purchase invoice.har"
+    ],
+    "PRCORD": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Purchasing/Purchase order.har"
+    ],
+    "PRCREV": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Inspection Report & supplier additions.har"
+    ],
+    "PRCRTN": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Purchasing/Purchase return.har"
+    ],
+    "SALINV": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Accounts/Sales invoice.har"
+    ],
+    "SALORD": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Sales/Sales Order.har",
+      "Sales Order.har"
+    ],
+    "SALRE": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Sales/Samples request.har"
+    ],
+    "SALREQ": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Sales/Sales request.har",
+      "Sales request.har"
+    ],
+    "SALRT2": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Sales/Sales return request.har"
+    ],
+    "SALRTN": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Accounts/Sales Return.har"
+    ],
+    "STRIN2": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Inspection Report & supplier additions.har"
+    ],
+    "STRMAK": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Samples Issue.har"
+    ],
+    "STRMR": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Samples Return.har"
+    ],
+    "STRMRS": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Samples Return request.har"
+    ],
+    "STROUT": [
+      "Flow HAR files-20260915T171937Z-1-001.zip!Flow HAR files/Inventory/Production Issue.har"
+    ]
+  },
+  "extracted": [
+    "PRCINV",
+    "PRCORD",
+    "PRCREV",
+    "PRCRTN",
+    "SALINV",
+    "SALORD",
+    "SALRE",
+    "SALREQ",
+    "SALRT2",
+    "SALRTN",
+    "STRIN2",
+    "STRMAK",
+    "STRMR",
+    "STRMRS",
+    "STROUT"
+  ]
+}

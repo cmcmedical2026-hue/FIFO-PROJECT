@@ -1,0 +1,898 @@
+{
+  "_doc": "Known lots per item: lot -> expiry (d-m-yyyy or m-yyyy). Aliases map spellings seen in remarks/counts to the canonical lot. merged: lots that the physical count relabelled into one lot. 108: the 31-08 count (confirmed by the user 24-09) puts all stock on 36142025001; documents that say 36142025003 / 17-3-2028 are read as 36142025001.",
+  "items": {
+    "5": {
+      "230625": "24-6-2028"
+    },
+    "6": {
+      "250620": "19-6-2030"
+    },
+    "39": {
+      "230625": "26-4-2028"
+    },
+    "43": {
+      "216120926T": "2-2028"
+    },
+    "52": {
+      "230625": "24-6-2028",
+      "220601": "31-5-2027",
+      "220310": "9-3-2027"
+    },
+    "70": {
+      "U24092318": "28-9-2027"
+    },
+    "71": {
+      "U24092318": "28-9-2027"
+    },
+    "72": {
+      "U26010601": "13-1-2029"
+    },
+    "75": {
+      "0469-E3": "25-11-2026",
+      "0505-E2": "4-9-2027"
+    },
+    "78": {
+      "24101201": "16-10-2026",
+      "24041704": "23-4-2026"
+    },
+    "90": {
+      "U24092314": "28-9-2027"
+    },
+    "94": {
+      "AET110": "28-8-2026"
+    },
+    "100": {
+      "0823020": "7-2026"
+    },
+    "101": {
+      "36052025009": "20-11-2028",
+      "36052025003": "15-3-2028",
+      "36052025004": "9-6-2028",
+      "36052024004": "13-9-2027",
+      "36052024003": "17-7-2027",
+      "36052025002": "18-1-2028"
+    },
+    "102": {
+      "0823020": "7-2026"
+    },
+    "103": {
+      "SA1023001": "9-2026",
+      "SA0824001": "7-2027"
+    },
+    "105": {
+      "36112025001": "3-1-2028",
+      "36112025003": "15-3-2028",
+      "36112025004": "22-3-2028",
+      "36112025017": "25-11-2028",
+      "36112024001": "8-1-2027"
+    },
+    "106": {
+      "36132025002": "10-1-2028",
+      "36132025003": "18-3-2028",
+      "36132025001": ""
+    },
+    "107": {
+      "36122025004": "20-11-2028",
+      "36122025001": "8-1-2028"
+    },
+    "108": {
+      "36142025001": "7-1-2028"
+    },
+    "114": {
+      "بدون": "7-2027"
+    },
+    "115": {
+      "بدون": "7-2027"
+    },
+    "118": {
+      "بدون": "بدون"
+    },
+    "125": {
+      "بدون": "2027"
+    },
+    "126": {
+      "بدون": "2027"
+    },
+    "129": {
+      "بدون": "بدون"
+    },
+    "136": {
+      "1101": "10-2032"
+    },
+    "137": {
+      "6565": "23-12-2027",
+      "NN22B6339": "3-2027"
+    },
+    "138": {
+      "6567": "24-12-2027",
+      "6219": "5-2027"
+    },
+    "139": {
+      "بدون": "7-2027"
+    },
+    "141": {
+      "0823020": "7-2026"
+    },
+    "142": {
+      "20240525781": "24-5-2027",
+      "20251009031": "2028-10-08",
+      "20241219031": "2027-12-18"
+    },
+    "143": {
+      "20241212031": "11-12-2027"
+    },
+    "144": {
+      "20241213031": "12-12-2027",
+      "20251014031": "13-10-2028"
+    },
+    "30010": {
+      "240519": "18-5-2029"
+    },
+    "BATTERY": {
+      "بدون": "18-1-2027"
+    },
+    "ESA60-2.6": {
+      "36102025011": "18-11-2028"
+    },
+    "HF5137": {
+      "53022026002": "8-2-2030"
+    },
+    "QELC": {
+      "01012023004": "24-11-2027"
+    },
+    "QELC 6035B": {
+      "01552022024951": "18-10-2026"
+    },
+    "SA-14": {
+      "SA0824001": "7-2027"
+    }
+  },
+  "aliases": {
+    "70": {
+      "U23030903": "U24092318",
+      "U23030907": "U24092318",
+      "U23030915": "U24092318",
+      "U2409238": "U24092318"
+    },
+    "71": {
+      "U23030904": "U24092318",
+      "U23030908": "U24092318",
+      "U2409238": "U24092318"
+    },
+    "90": {
+      "U23030906": "U24092314",
+      "U23030910": "U24092314",
+      "U230309010": "U24092314",
+      "U2409231": "U24092314"
+    },
+    "101": {
+      "360520255009": "36052025009",
+      "3605202500": "36052025009",
+      "3605202009": "36052025009",
+      "3605205004": "36052025004",
+      "360520240004": "36052024004",
+      "360052024004": "36052024004"
+    },
+    "107": {
+      "3612205001": "36122025001"
+    },
+    "108": {
+      "36142025003": "36142025001",
+      "3614205003": "36142025001"
+    },
+    "75": {
+      "2525-E2": "0505-E2"
+    },
+    "QELC": {
+      "1012023004": "01012023004"
+    },
+    "QELC 6035B": {
+      "1552022024951": "01552022024951",
+      "1.55202E+12": "01552022024951"
+    }
+  },
+  "purchase_receipt_sources": {
+    "STRIN2:100:138": {
+      "actual_unit_cost": 242.15,
+      "received_qty": 10.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 10.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:101:138": {
+      "actual_unit_cost": 242.15,
+      "received_qty": 10.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 10.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:102:78": {
+      "actual_unit_cost": 12200.0,
+      "received_qty": 20.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 20.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:103:115": {
+      "actual_unit_cost": 0.0,
+      "received_qty": 5.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 5.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:104:75": {
+      "actual_unit_cost": 560.0,
+      "received_qty": 36.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 36.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:105:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 18.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 18.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:105:105": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 2688.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 2688.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:105:106": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 1344.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 1344.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:105:107": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 1344.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 1344.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:106:TCTX4221-M": {
+      "actual_unit_cost": 900.0,
+      "received_qty": 15.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 15.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:106:TCTX7221-L": {
+      "actual_unit_cost": 1150.0,
+      "received_qty": 2.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 2.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:107:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 34.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 34.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:108:142": {
+      "actual_unit_cost": 385.0,
+      "received_qty": 400.0,
+      "batches": [
+        {
+          "lot": "20251009031",
+          "exp": "2028-10-08",
+          "qty": 300.0
+        },
+        {
+          "lot": "20241219031",
+          "exp": "2027-12-18",
+          "qty": 100.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:109:142": {
+      "actual_unit_cost": 420.0,
+      "received_qty": 50.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 50.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:110:142": {
+      "actual_unit_cost": 420.0,
+      "received_qty": 169.0,
+      "batches": [
+        {
+          "lot": "20251009031",
+          "exp": "2028-10-08",
+          "qty": 169.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:110:144": {
+      "actual_unit_cost": 370.0,
+      "received_qty": 1000.0,
+      "batches": [
+        {
+          "lot": "20251014031",
+          "exp": "2028-10-13",
+          "qty": 1000.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:111:144": {
+      "actual_unit_cost": 370.0,
+      "received_qty": 400.0,
+      "batches": [
+        {
+          "lot": "20251014031",
+          "exp": "2028-10-13",
+          "qty": 400.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:111:72": {
+      "actual_unit_cost": 790.0,
+      "received_qty": 5.0,
+      "batches": [
+        {
+          "lot": "U26010601",
+          "exp": "2029-01-13",
+          "qty": 5.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:112:72": {
+      "actual_unit_cost": 790.0,
+      "received_qty": 10.0,
+      "batches": [
+        {
+          "lot": "U26010601",
+          "exp": "2029-01-13",
+          "qty": 10.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:113:142": {
+      "actual_unit_cost": 450.0,
+      "received_qty": 30.0,
+      "batches": [
+        {
+          "lot": "20241219031",
+          "exp": "2027-12-18",
+          "qty": 30.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:114:75": {
+      "actual_unit_cost": 850.0,
+      "received_qty": 10.0,
+      "batches": [
+        {
+          "lot": "0469-E3",
+          "exp": "2026-11-25",
+          "qty": 10.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:115:6": {
+      "actual_unit_cost": 475.0,
+      "received_qty": 600.0,
+      "batches": [
+        {
+          "lot": "250620",
+          "exp": "2030-06-19",
+          "qty": 600.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:118:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 12.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 12.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:119:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 12.0,
+      "batches": [
+        {
+          "lot": "36052025003",
+          "exp": "2028-03-15",
+          "qty": 6.0
+        },
+        {
+          "lot": "36052025009",
+          "exp": "2028-11-20",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:120:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 6.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-01-07",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:120:ESA60-2.6": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 6.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-09-05",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:121:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 6.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-01-07",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:121:ESA60-2.6": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 6.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-11-18",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:122:70": {
+      "actual_unit_cost": 895.0,
+      "received_qty": 1.0,
+      "batches": [
+        {
+          "lot": "U24092318",
+          "exp": "2027-09-28",
+          "qty": 1.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:123:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 30.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-01-07",
+          "qty": 30.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:124:75": {
+      "actual_unit_cost": 850.0,
+      "received_qty": 10.0,
+      "batches": [
+        {
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "qty": 10.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 12.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 12.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:105": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 2016.0,
+      "batches": [
+        {
+          "lot": "36112025003",
+          "exp": "2028-03-15",
+          "qty": 1344.0
+        },
+        {
+          "lot": "36112025017",
+          "exp": "2028-11-25",
+          "qty": 224.0
+        },
+        {
+          "lot": "36112025004",
+          "exp": "2028-03-22",
+          "qty": 448.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:106": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 648.0,
+      "batches": [
+        {
+          "lot": "36132025002",
+          "exp": "2028-01-10",
+          "qty": 200.0
+        },
+        {
+          "lot": "36132025003",
+          "exp": "2028-03-18",
+          "qty": 448.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:107": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 672.0,
+      "batches": [
+        {
+          "lot": "36122025004",
+          "exp": "2028-11-20",
+          "qty": 672.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 224.0,
+      "batches": [
+        {
+          "lot": "36142025001",
+          "exp": "2028-01-07",
+          "qty": 224.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:125:ESA60-2.6": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 6.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "",
+          "qty": 6.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:126:75": {
+      "actual_unit_cost": 850.0,
+      "received_qty": 120.0,
+      "batches": [
+        {
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "qty": 120.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:127:6": {
+      "actual_unit_cost": 431.8181,
+      "received_qty": 55.0,
+      "batches": [
+        {
+          "lot": "250620",
+          "exp": "2030-06-19",
+          "qty": 55.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:128:75": {
+      "actual_unit_cost": 850.0,
+      "received_qty": 130.0,
+      "batches": [
+        {
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "qty": 130.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:129:144": {
+      "actual_unit_cost": 370.0,
+      "received_qty": 700.0,
+      "batches": [
+        {
+          "lot": "20251014031",
+          "exp": "2028-10-13",
+          "qty": 700.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:129:6": {
+      "actual_unit_cost": 431.8182,
+      "received_qty": 330.0,
+      "batches": [
+        {
+          "lot": "250620",
+          "exp": "2030-06-19",
+          "qty": 330.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:130:72": {
+      "actual_unit_cost": 790.0,
+      "received_qty": 2.0,
+      "batches": [
+        {
+          "lot": "U26010601",
+          "exp": "2029-01-13",
+          "qty": 2.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:131:72": {
+      "actual_unit_cost": 790.0,
+      "received_qty": 20.0,
+      "batches": [
+        {
+          "lot": "U26010601",
+          "exp": "2029-01-13",
+          "qty": 20.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:132:43": {
+      "actual_unit_cost": 1400.0,
+      "received_qty": 100.0,
+      "batches": [
+        {
+          "lot": "216120926T",
+          "exp": "2028-02",
+          "qty": 100.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:133:75": {
+      "actual_unit_cost": 850.0,
+      "received_qty": 20.0,
+      "batches": [
+        {
+          "lot": "0505-E2",
+          "exp": "2027-09-04",
+          "qty": 20.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:134:107": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 26.0,
+      "batches": [
+        {
+          "lot": "36122025004",
+          "exp": "2028-11-20",
+          "qty": 26.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:134:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 44.0,
+      "batches": [
+        {
+          "lot": "36142025001",
+          "exp": "2028-01-07",
+          "qty": 44.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:134:BATTERY": {
+      "actual_unit_cost": 292.0,
+      "received_qty": 3.0,
+      "batches": [
+        {
+          "lot": "",
+          "exp": "2028-02-20",
+          "qty": 3.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:135:HF5137": {
+      "actual_unit_cost": 1.0,
+      "received_qty": 2.0,
+      "batches": [
+        {
+          "lot": "53022026002",
+          "exp": "2030-02-08",
+          "qty": 2.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:136:101": {
+      "actual_unit_cost": 12500.0,
+      "received_qty": 18.0,
+      "batches": [
+        {
+          "lot": "36052025002",
+          "exp": "2028-01-18",
+          "qty": 15.0
+        },
+        {
+          "lot": "36052024003",
+          "exp": "2027-07-17",
+          "qty": 3.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:136:105": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 224.0,
+      "batches": [
+        {
+          "lot": "36112025017",
+          "exp": "2028-11-25",
+          "qty": 224.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:136:106": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 224.0,
+      "batches": [
+        {
+          "lot": "36132025003",
+          "exp": "2028-03-18",
+          "qty": 224.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:136:107": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 448.0,
+      "batches": [
+        {
+          "lot": "36122025004",
+          "exp": "2028-11-20",
+          "qty": 448.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:136:108": {
+      "actual_unit_cost": 700.0,
+      "received_qty": 224.0,
+      "batches": [
+        {
+          "lot": "36142025001",
+          "exp": "2028-01-07",
+          "qty": 224.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    },
+    "STRIN2:137:137": {
+      "actual_unit_cost": 1.0,
+      "received_qty": 24.0,
+      "batches": [
+        {
+          "lot": "NN22B6339",
+          "exp": "2027-03",
+          "qty": 24.0
+        }
+      ],
+      "rule_authorized": "2026-09-28"
+    }
+  }
+}

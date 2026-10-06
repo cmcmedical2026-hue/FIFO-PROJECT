@@ -1,0 +1,15 @@
+{
+  "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44/edit",
+  "movement_lines": 856,
+  "native_cost_lines_verified": 854,
+  "native_formula_errors": 0,
+  "purchase_prices_verified": 56,
+  "unresolved_cost_lines": 2,
+  "unchanged_source_cells_verified": 10272,
+  "opening_cells_unchanged": true,
+  "all_monthly_summary_values_and_document_counts_verified": true,
+  "verification_method": "Connected Google Sheets APIs; no browser capture",
+  "latest_changed_cost_lines_verified": 20,
+  "latest_verification": "outputs/approved-batch-decisions-2026-09-28/native_verification.json",
+  "coverage": "Prior 838 native checks plus 16 newly costed lines and rechecked affected formulas"
+}

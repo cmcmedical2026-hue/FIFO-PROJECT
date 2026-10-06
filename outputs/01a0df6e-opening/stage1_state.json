@@ -1,0 +1,41 @@
+{
+  "stage": 1,
+  "status": "completed_user_authorized_stage2",
+  "spreadsheet_id": "1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44",
+  "url": "https://docs.google.com/spreadsheets/d/1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44/edit",
+  "scope": {
+    "company": "1",
+    "store": "1",
+    "store_name": "مخزون المقطم 1",
+    "as_of": "2025-12-31"
+  },
+  "verification": {
+    "openingRowsVerified": 43,
+    "reconciliationCodes": 106,
+    "allDifferencesZero": true,
+    "metrics": [
+      41,
+      11347,
+      6592366.54,
+      43,
+      31,
+      12,
+      1,
+      0
+    ]
+  },
+  "source_sha256": "80929222bec974009ce16776628ae7b8ba6d217c997bacae3229fcf9b772c88f",
+  "flow_costs_imported": false,
+  "flow_modified": false,
+  "source_modified": false,
+  "next_stage": "January and February movements and item-level month-end reconciliations, requires user approval under agreed stage gates",
+  "notes": [
+    "12 missing expiry rows remain blank",
+    "Lots remain blank until documented or approved allocation",
+    "Item70 cost880 layer precedes895; opening expiry retained, February expiry conflict unresolved",
+    "Item136 zero source cost retained and flagged",
+    "Native column widths and collapsible opening source notes repaired after import",
+    "Native Google Sheet is authoritative deliverable; local XLSX is pre-layout-repair build",
+    "The earlier reconciliation tab and dependent hidden dashboard/helper tabs were removed on 2026-09-27 at the user's request to keep reconciliation in chat only"
+  ]
+}

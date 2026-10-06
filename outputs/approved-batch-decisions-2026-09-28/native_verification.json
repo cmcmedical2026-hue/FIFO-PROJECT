@@ -1,0 +1,13 @@
+{
+  "native_changed_cost_lines": 20,
+  "changed_cells_verified": 78,
+  "resolved_initial_lines": 16,
+  "remaining_unresolved_cost_lines": 2,
+  "native_formula_errors": 0,
+  "unchanged_source_cells_verified": 356,
+  "unchanged_format_annotation_cells": 374,
+  "summary_values_and_document_counts_verified": 80,
+  "source_csv_hashes_unchanged": true,
+  "verified_via": "Google Sheets API; no browser capture",
+  "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44/edit"
+}

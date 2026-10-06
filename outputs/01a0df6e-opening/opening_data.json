@@ -1,0 +1,3631 @@
+{
+  "as_of": "2025-12-31",
+  "company": 1,
+  "store": 1,
+  "store_name": "مخزون المقطم 1",
+  "fetched_at": "2026-09-27T00:11:44.385628+03:00",
+  "source_file": "Opening balance 2026.csv",
+  "source_sha256": "80929222bec974009ce16776628ae7b8ba6d217c997bacae3229fcf9b772c88f",
+  "queries": {
+    "store": "select CONO,STRNO,FORDES from stores where CONO=1 and STRNO=1",
+    "history": "select d.CONO,d.STRNO,d.ITNO,d.EFFECTITBAL,sum(d.STRQTY) quantity,count(*) line_count from trndtl d join trnhdr h on h.CONO=d.CONO and h.STRNO=d.STRNO and h.OPCODE=d.OPCODE and h.DOCNO=d.DOCNO where d.CONO=1 and d.STRNO=1 and d.STS='A' and h.STS='A' and d.EFFECTITBAL in ('A','S') and d.DOCDT<'2026-01-01' group by d.CONO,d.STRNO,d.ITNO,d.EFFECTITBAL",
+    "opening_flags": "select CONO,STRNO,ITNO,OPBAL,OPDT from itbal where CONO=1 and STRNO=1",
+    "control": "select EFFECTITBAL,sum(STRQTY) quantity,count(*) line_count from trndtl where CONO=1 and STRNO=1 and STS='A' and EFFECTITBAL in ('A','S') and DOCDT<'2026-01-01' group by EFFECTITBAL"
+  },
+  "raw": {
+    "store": [
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "FORDES": "مخزون المقطم 1"
+      }
+    ],
+    "history": [
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "100",
+        "EFFECTITBAL": "A",
+        "quantity": 317.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "100",
+        "EFFECTITBAL": "S",
+        "quantity": 114.0,
+        "line_count": 45
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "101",
+        "EFFECTITBAL": "A",
+        "quantity": 99.0,
+        "line_count": 25
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "101",
+        "EFFECTITBAL": "S",
+        "quantity": 92.0,
+        "line_count": 61
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "102",
+        "EFFECTITBAL": "A",
+        "quantity": 61.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "102",
+        "EFFECTITBAL": "S",
+        "quantity": 2.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "103",
+        "EFFECTITBAL": "A",
+        "quantity": 4.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "103",
+        "EFFECTITBAL": "S",
+        "quantity": 2.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "104",
+        "EFFECTITBAL": "A",
+        "quantity": 35.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "104",
+        "EFFECTITBAL": "S",
+        "quantity": 35.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "105",
+        "EFFECTITBAL": "A",
+        "quantity": 7652.0,
+        "line_count": 38
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "105",
+        "EFFECTITBAL": "S",
+        "quantity": 6732.0,
+        "line_count": 123
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "106",
+        "EFFECTITBAL": "A",
+        "quantity": 3602.0,
+        "line_count": 30
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "106",
+        "EFFECTITBAL": "S",
+        "quantity": 3222.0,
+        "line_count": 131
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "107",
+        "EFFECTITBAL": "A",
+        "quantity": 1700.0,
+        "line_count": 33
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "107",
+        "EFFECTITBAL": "S",
+        "quantity": 1507.0,
+        "line_count": 94
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "108",
+        "EFFECTITBAL": "A",
+        "quantity": 872.0,
+        "line_count": 25
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "108",
+        "EFFECTITBAL": "S",
+        "quantity": 801.0,
+        "line_count": 76
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "109",
+        "EFFECTITBAL": "A",
+        "quantity": 230.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "109",
+        "EFFECTITBAL": "S",
+        "quantity": 230.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "110",
+        "EFFECTITBAL": "A",
+        "quantity": 31.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "110",
+        "EFFECTITBAL": "S",
+        "quantity": 31.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "111",
+        "EFFECTITBAL": "A",
+        "quantity": 10.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "111",
+        "EFFECTITBAL": "S",
+        "quantity": 10.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "112",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "112",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "113",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "114",
+        "EFFECTITBAL": "A",
+        "quantity": 43.0,
+        "line_count": 9
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "114",
+        "EFFECTITBAL": "S",
+        "quantity": 41.0,
+        "line_count": 10
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "115",
+        "EFFECTITBAL": "A",
+        "quantity": 774.0,
+        "line_count": 16
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "115",
+        "EFFECTITBAL": "S",
+        "quantity": 764.0,
+        "line_count": 25
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "116",
+        "EFFECTITBAL": "A",
+        "quantity": 4.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "116",
+        "EFFECTITBAL": "S",
+        "quantity": 4.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "118",
+        "EFFECTITBAL": "A",
+        "quantity": 8.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "118",
+        "EFFECTITBAL": "S",
+        "quantity": 7.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "125",
+        "EFFECTITBAL": "A",
+        "quantity": 6.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "125",
+        "EFFECTITBAL": "S",
+        "quantity": 3.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "126",
+        "EFFECTITBAL": "A",
+        "quantity": 10.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "126",
+        "EFFECTITBAL": "S",
+        "quantity": 5.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "128",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "128",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "129",
+        "EFFECTITBAL": "A",
+        "quantity": 3.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "129",
+        "EFFECTITBAL": "S",
+        "quantity": 2.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "13",
+        "EFFECTITBAL": "A",
+        "quantity": 3.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "13",
+        "EFFECTITBAL": "S",
+        "quantity": 3.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "131",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "131",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "136",
+        "EFFECTITBAL": "A",
+        "quantity": 7.0,
+        "line_count": 7
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "136",
+        "EFFECTITBAL": "S",
+        "quantity": 6.0,
+        "line_count": 6
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "137",
+        "EFFECTITBAL": "A",
+        "quantity": 778.0,
+        "line_count": 10
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "137",
+        "EFFECTITBAL": "S",
+        "quantity": 771.0,
+        "line_count": 15
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "138",
+        "EFFECTITBAL": "A",
+        "quantity": 311.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "138",
+        "EFFECTITBAL": "S",
+        "quantity": 308.0,
+        "line_count": 9
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "139",
+        "EFFECTITBAL": "A",
+        "quantity": 41.0,
+        "line_count": 14
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "139",
+        "EFFECTITBAL": "S",
+        "quantity": 35.0,
+        "line_count": 29
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "140",
+        "EFFECTITBAL": "A",
+        "quantity": 4.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "140",
+        "EFFECTITBAL": "S",
+        "quantity": 4.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "141",
+        "EFFECTITBAL": "A",
+        "quantity": 143.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "141",
+        "EFFECTITBAL": "S",
+        "quantity": 110.0,
+        "line_count": 32
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "142",
+        "EFFECTITBAL": "A",
+        "quantity": 6842.0,
+        "line_count": 20
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "142",
+        "EFFECTITBAL": "S",
+        "quantity": 5301.0,
+        "line_count": 197
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "143",
+        "EFFECTITBAL": "A",
+        "quantity": 3133.0,
+        "line_count": 11
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "143",
+        "EFFECTITBAL": "S",
+        "quantity": 1482.0,
+        "line_count": 47
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "144",
+        "EFFECTITBAL": "A",
+        "quantity": 9393.0,
+        "line_count": 16
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "144",
+        "EFFECTITBAL": "S",
+        "quantity": 7472.0,
+        "line_count": 81
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "17",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "18",
+        "EFFECTITBAL": "A",
+        "quantity": 3.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "19",
+        "EFFECTITBAL": "A",
+        "quantity": 9.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "2",
+        "EFFECTITBAL": "A",
+        "quantity": 3.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "2",
+        "EFFECTITBAL": "S",
+        "quantity": 3.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "22",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "22",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "23",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "23",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "3",
+        "EFFECTITBAL": "A",
+        "quantity": 16.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "3",
+        "EFFECTITBAL": "S",
+        "quantity": 16.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30",
+        "EFFECTITBAL": "A",
+        "quantity": 12.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30",
+        "EFFECTITBAL": "S",
+        "quantity": 12.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30010",
+        "EFFECTITBAL": "A",
+        "quantity": 11.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30010",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "38",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "38",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "39",
+        "EFFECTITBAL": "A",
+        "quantity": 141.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "39",
+        "EFFECTITBAL": "S",
+        "quantity": 139.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "40",
+        "EFFECTITBAL": "A",
+        "quantity": 50.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "40",
+        "EFFECTITBAL": "S",
+        "quantity": 50.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "41",
+        "EFFECTITBAL": "A",
+        "quantity": 35.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "41",
+        "EFFECTITBAL": "S",
+        "quantity": 35.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "42",
+        "EFFECTITBAL": "A",
+        "quantity": 173.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "42",
+        "EFFECTITBAL": "S",
+        "quantity": 173.0,
+        "line_count": 23
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "43",
+        "EFFECTITBAL": "A",
+        "quantity": 399.0,
+        "line_count": 11
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "43",
+        "EFFECTITBAL": "S",
+        "quantity": 399.0,
+        "line_count": 22
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "45",
+        "EFFECTITBAL": "A",
+        "quantity": 47.0,
+        "line_count": 11
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "45",
+        "EFFECTITBAL": "S",
+        "quantity": 47.0,
+        "line_count": 20
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "46",
+        "EFFECTITBAL": "A",
+        "quantity": 27.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "46",
+        "EFFECTITBAL": "S",
+        "quantity": 27.0,
+        "line_count": 6
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "47",
+        "EFFECTITBAL": "A",
+        "quantity": 201.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "47",
+        "EFFECTITBAL": "S",
+        "quantity": 201.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "49",
+        "EFFECTITBAL": "A",
+        "quantity": 175.0,
+        "line_count": 8
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "49",
+        "EFFECTITBAL": "S",
+        "quantity": 175.0,
+        "line_count": 34
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "5",
+        "EFFECTITBAL": "A",
+        "quantity": 5856.0,
+        "line_count": 18
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "5",
+        "EFFECTITBAL": "S",
+        "quantity": 5841.0,
+        "line_count": 85
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "50",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "50",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "52",
+        "EFFECTITBAL": "A",
+        "quantity": 375.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "52",
+        "EFFECTITBAL": "S",
+        "quantity": 317.0,
+        "line_count": 5
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "53",
+        "EFFECTITBAL": "A",
+        "quantity": 66.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "53",
+        "EFFECTITBAL": "S",
+        "quantity": 66.0,
+        "line_count": 5
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "6",
+        "EFFECTITBAL": "A",
+        "quantity": 1303.0,
+        "line_count": 16
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "6",
+        "EFFECTITBAL": "S",
+        "quantity": 1303.0,
+        "line_count": 42
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "64",
+        "EFFECTITBAL": "A",
+        "quantity": 4.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "64",
+        "EFFECTITBAL": "S",
+        "quantity": 4.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "65",
+        "EFFECTITBAL": "A",
+        "quantity": 31.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "65",
+        "EFFECTITBAL": "S",
+        "quantity": 31.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "68",
+        "EFFECTITBAL": "A",
+        "quantity": 48.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "68",
+        "EFFECTITBAL": "S",
+        "quantity": 48.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "70",
+        "EFFECTITBAL": "A",
+        "quantity": 4896.0,
+        "line_count": 19
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "70",
+        "EFFECTITBAL": "S",
+        "quantity": 1813.0,
+        "line_count": 70
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "71",
+        "EFFECTITBAL": "A",
+        "quantity": 1738.0,
+        "line_count": 12
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "71",
+        "EFFECTITBAL": "S",
+        "quantity": 1360.0,
+        "line_count": 42
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "72",
+        "EFFECTITBAL": "A",
+        "quantity": 1951.0,
+        "line_count": 11
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "72",
+        "EFFECTITBAL": "S",
+        "quantity": 1847.0,
+        "line_count": 46
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "75",
+        "EFFECTITBAL": "A",
+        "quantity": 1811.0,
+        "line_count": 31
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "75",
+        "EFFECTITBAL": "S",
+        "quantity": 1535.0,
+        "line_count": 146
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "76",
+        "EFFECTITBAL": "A",
+        "quantity": 5.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "76",
+        "EFFECTITBAL": "S",
+        "quantity": 5.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "77",
+        "EFFECTITBAL": "A",
+        "quantity": 110.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "77",
+        "EFFECTITBAL": "S",
+        "quantity": 110.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "78",
+        "EFFECTITBAL": "A",
+        "quantity": 9.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "78",
+        "EFFECTITBAL": "S",
+        "quantity": 9.0,
+        "line_count": 5
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "83",
+        "EFFECTITBAL": "A",
+        "quantity": 21.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "83",
+        "EFFECTITBAL": "S",
+        "quantity": 21.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "84",
+        "EFFECTITBAL": "A",
+        "quantity": 12.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "84",
+        "EFFECTITBAL": "S",
+        "quantity": 12.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "85",
+        "EFFECTITBAL": "A",
+        "quantity": 460.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "85",
+        "EFFECTITBAL": "S",
+        "quantity": 460.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "86",
+        "EFFECTITBAL": "A",
+        "quantity": 31.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "86",
+        "EFFECTITBAL": "S",
+        "quantity": 31.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "89",
+        "EFFECTITBAL": "A",
+        "quantity": 52.0,
+        "line_count": 6
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "89",
+        "EFFECTITBAL": "S",
+        "quantity": 52.0,
+        "line_count": 9
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "90",
+        "EFFECTITBAL": "A",
+        "quantity": 428.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "90",
+        "EFFECTITBAL": "S",
+        "quantity": 196.0,
+        "line_count": 7
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "91",
+        "EFFECTITBAL": "A",
+        "quantity": 509.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "91",
+        "EFFECTITBAL": "S",
+        "quantity": 509.0,
+        "line_count": 4
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "92",
+        "EFFECTITBAL": "A",
+        "quantity": 345.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "92",
+        "EFFECTITBAL": "S",
+        "quantity": 345.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "94",
+        "EFFECTITBAL": "A",
+        "quantity": 181.0,
+        "line_count": 5
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "94",
+        "EFFECTITBAL": "S",
+        "quantity": 53.0,
+        "line_count": 11
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "96",
+        "EFFECTITBAL": "A",
+        "quantity": 18.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "96",
+        "EFFECTITBAL": "S",
+        "quantity": 18.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "97",
+        "EFFECTITBAL": "A",
+        "quantity": 20.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "97",
+        "EFFECTITBAL": "S",
+        "quantity": 20.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "BATTERY",
+        "EFFECTITBAL": "A",
+        "quantity": 25.0,
+        "line_count": 2
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "BATTERY",
+        "EFFECTITBAL": "S",
+        "quantity": 7.0,
+        "line_count": 3
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "CSS29",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "CSS29",
+        "EFFECTITBAL": "S",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E3147P",
+        "EFFECTITBAL": "A",
+        "quantity": 10.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E3147P",
+        "EFFECTITBAL": "S",
+        "quantity": 10.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E6149L",
+        "EFFECTITBAL": "A",
+        "quantity": 25.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E6149L",
+        "EFFECTITBAL": "S",
+        "quantity": 25.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E7185",
+        "EFFECTITBAL": "A",
+        "quantity": 20.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E7185",
+        "EFFECTITBAL": "S",
+        "quantity": 20.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "ESA60-2.6",
+        "EFFECTITBAL": "A",
+        "quantity": 4.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "PEN102828",
+        "EFFECTITBAL": "A",
+        "quantity": 57.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "PEN102828",
+        "EFFECTITBAL": "S",
+        "quantity": 57.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "QELC",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "QELC 6035B",
+        "EFFECTITBAL": "A",
+        "quantity": 1.0,
+        "line_count": 1
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "SA-14",
+        "EFFECTITBAL": "A",
+        "quantity": 3.0,
+        "line_count": 1
+      }
+    ],
+    "opening_flags": [
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "100",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "101",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "102",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "103",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "104",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "105",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "106",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "107",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "108",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "109",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "110",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "111",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "112",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "113",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "114",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "116",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "118",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "125",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "126",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "128",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "13",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "136",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "137",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "138",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "139",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "140",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "141",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "142",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "143",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "144",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "17",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "18",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "19",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "2",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "22",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "23",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "3",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "38",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "39",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "40",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "41",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "42",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "43",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "45",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "46",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "47",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "49",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "5",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "50",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "52",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "53",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "6",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "64",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "65",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "68",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "72",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "75",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "76",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "77",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "78",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "83",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "84",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "85",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "86",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "89",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "90",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "91",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "92",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "94",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "96",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "97",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "CSS29",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E3147P",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E6149L",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "E7185",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "PEN102828",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "QELC",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "QELC 6035B",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "SA-14",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "131",
+        "OPBAL": 0.0,
+        "OPDT": "2025-04-16T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "ECR60PC",
+        "OPBAL": 0.0,
+        "OPDT": "2025-05-05T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "129",
+        "OPBAL": 0.0,
+        "OPDT": "2025-05-18T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "70",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "ESA60-2.6",
+        "OPBAL": 0.0,
+        "OPDT": "2025-07-08T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "BATTERY",
+        "OPBAL": 0.0,
+        "OPDT": "2025-08-02T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "115",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "30010",
+        "OPBAL": 0.0,
+        "OPDT": "2025-12-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "TCTX4221-M",
+        "OPBAL": 0.0,
+        "OPDT": "2026-03-01T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "TCTX7221-L",
+        "OPBAL": 0.0,
+        "OPDT": "2026-03-01T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "71",
+        "OPBAL": 0.0,
+        "OPDT": null
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "117",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "119",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "120",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "121",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "122",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "123",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "124",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "127",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "130",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "132",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "133",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "134",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "135",
+        "OPBAL": 0.0,
+        "OPDT": "2026-06-03T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "H5137",
+        "OPBAL": 0.0,
+        "OPDT": "2026-08-26T00:00:00"
+      },
+      {
+        "CONO": 1,
+        "STRNO": "1",
+        "ITNO": "HF5137",
+        "OPBAL": 0.0,
+        "OPDT": "2026-08-26T00:00:00"
+      }
+    ],
+    "control": [
+      {
+        "EFFECTITBAL": "A",
+        "quantity": 57854.0,
+        "line_count": 522
+      },
+      {
+        "EFFECTITBAL": "S",
+        "quantity": 46507.0,
+        "line_count": 1647
+      }
+    ]
+  },
+  "opening": [
+    {
+      "row": 2,
+      "layer_id": "OPEN-002",
+      "item": "100",
+      "name": "Surg-Spon Hemostatic Powder 1g",
+      "qty": 203.0,
+      "expiry_source": "26-07",
+      "unit_cost": 425.0,
+      "value": 86275.0
+    },
+    {
+      "row": 3,
+      "layer_id": "OPEN-003",
+      "item": "101",
+      "name": "Powered endoscopic stapler 60mm",
+      "qty": 7.0,
+      "expiry_source": "",
+      "unit_cost": 12500.0,
+      "value": 87500.0
+    },
+    {
+      "row": 4,
+      "layer_id": "OPEN-004",
+      "item": "102",
+      "name": "Surg-Spon Hemostatic Powder 3g",
+      "qty": 59.0,
+      "expiry_source": "26-07",
+      "unit_cost": 975.0,
+      "value": 57525.0
+    },
+    {
+      "row": 5,
+      "layer_id": "OPEN-005",
+      "item": "103",
+      "name": "Sterile Applcator 38m",
+      "qty": 1.0,
+      "expiry_source": "26-09",
+      "unit_cost": 800.0,
+      "value": 800.0
+    },
+    {
+      "row": 6,
+      "layer_id": "OPEN-006",
+      "item": "103",
+      "name": "Sterile Applcator 38m",
+      "qty": 1.0,
+      "expiry_source": "27-07",
+      "unit_cost": 800.0,
+      "value": 800.0
+    },
+    {
+      "row": 7,
+      "layer_id": "OPEN-007",
+      "item": "105",
+      "name": "Blue reload 60mm",
+      "qty": 920.0,
+      "expiry_source": "",
+      "unit_cost": 700.0,
+      "value": 644000.0
+    },
+    {
+      "row": 8,
+      "layer_id": "OPEN-008",
+      "item": "106",
+      "name": "Green reload 60mm",
+      "qty": 380.0,
+      "expiry_source": "",
+      "unit_cost": 700.0,
+      "value": 266000.0
+    },
+    {
+      "row": 9,
+      "layer_id": "OPEN-009",
+      "item": "107",
+      "name": "Gold reload 60mm",
+      "qty": 193.0,
+      "expiry_source": "",
+      "unit_cost": 700.0,
+      "value": 135100.0
+    },
+    {
+      "row": 10,
+      "layer_id": "OPEN-010",
+      "item": "108",
+      "name": "Black reload 60mm",
+      "qty": 71.0,
+      "expiry_source": "",
+      "unit_cost": 700.0,
+      "value": 49700.0
+    },
+    {
+      "row": 11,
+      "layer_id": "OPEN-011",
+      "item": "114",
+      "name": "EEG Paste ( Cream ) Elektro / 200 gr",
+      "qty": 2.0,
+      "expiry_source": "27-07",
+      "unit_cost": 170.0,
+      "value": 340.0
+    },
+    {
+      "row": 12,
+      "layer_id": "OPEN-012",
+      "item": "118",
+      "name": "EEG Electrodes_PURE SILVER_1500mm  (Pack of 12)",
+      "qty": 1.0,
+      "expiry_source": "",
+      "unit_cost": 12000.0,
+      "value": 12000.0
+    },
+    {
+      "row": 13,
+      "layer_id": "OPEN-013",
+      "item": "125",
+      "name": "Skin Preparation Gel (Neuprep) 100 gr",
+      "qty": 3.0,
+      "expiry_source": "27-01",
+      "unit_cost": 850.0,
+      "value": 2550.0
+    },
+    {
+      "row": 14,
+      "layer_id": "OPEN-014",
+      "item": "126",
+      "name": "Skin Preparation Gel (Neuprep)  150 gr",
+      "qty": 5.0,
+      "expiry_source": "27-01",
+      "unit_cost": 1300.0,
+      "value": 6500.0
+    },
+    {
+      "row": 15,
+      "layer_id": "OPEN-015",
+      "item": "136",
+      "name": "EMG Needle holder",
+      "qty": 1.0,
+      "expiry_source": "",
+      "unit_cost": 0.0,
+      "value": 0.0
+    },
+    {
+      "row": 16,
+      "layer_id": "OPEN-016",
+      "item": "137",
+      "name": "Oryx EMG Needle 5 cm disposable for neurophysiology ( yellow)",
+      "qty": 7.0,
+      "expiry_source": "27-12",
+      "unit_cost": 241.0,
+      "value": 1687.0
+    },
+    {
+      "row": 17,
+      "layer_id": "OPEN-017",
+      "item": "138",
+      "name": "Oryx EMG Needle 3.8 cm",
+      "qty": 3.0,
+      "expiry_source": "27-12",
+      "unit_cost": 242.15,
+      "value": 726.45
+    },
+    {
+      "row": 18,
+      "layer_id": "OPEN-018",
+      "item": "139",
+      "name": "paste cream demo",
+      "qty": 6.0,
+      "expiry_source": "27-07",
+      "unit_cost": 1.0,
+      "value": 6.0
+    },
+    {
+      "row": 19,
+      "layer_id": "OPEN-019",
+      "item": "141",
+      "name": "HEMO STATIC POWDER 2g",
+      "qty": 33.0,
+      "expiry_source": "27-07",
+      "unit_cost": 775.0,
+      "value": 25575.0
+    },
+    {
+      "row": 20,
+      "layer_id": "OPEN-020",
+      "item": "142",
+      "name": "PCA 275/5 ML With button (Fornia)",
+      "qty": 1541.0,
+      "expiry_source": "27-05",
+      "unit_cost": 385.0,
+      "value": 593285.0
+    },
+    {
+      "row": 21,
+      "layer_id": "OPEN-021",
+      "item": "143",
+      "name": "PCA 100/2 ML With button (Fornia)",
+      "qty": 1651.0,
+      "expiry_source": "27-05",
+      "unit_cost": 335.0,
+      "value": 553085.0
+    },
+    {
+      "row": 22,
+      "layer_id": "OPEN-022",
+      "item": "144",
+      "name": "PCA 100/4 ML With button (Fornia)",
+      "qty": 1921.0,
+      "expiry_source": "27-12",
+      "unit_cost": 335.0,
+      "value": 643535.0
+    },
+    {
+      "row": 23,
+      "layer_id": "OPEN-023",
+      "item": "113",
+      "name": "Panther black reload (CADA-60R5.0)",
+      "qty": 1.0,
+      "expiry_source": "",
+      "unit_cost": 1.0,
+      "value": 1.0
+    },
+    {
+      "row": 24,
+      "layer_id": "OPEN-024",
+      "item": "18",
+      "name": "Panther green reload 60mm",
+      "qty": 3.0,
+      "expiry_source": "",
+      "unit_cost": 900.33,
+      "value": 2700.99
+    },
+    {
+      "row": 25,
+      "layer_id": "OPEN-025",
+      "item": "39",
+      "name": "PCA 100/2ml without button(TUOREN)",
+      "qty": 2.0,
+      "expiry_source": "28-06",
+      "unit_cost": 340.0,
+      "value": 680.0
+    },
+    {
+      "row": 26,
+      "layer_id": "OPEN-026",
+      "item": "5",
+      "name": "PCA100/4ML with button (TUOREN)",
+      "qty": 15.0,
+      "expiry_source": "28-06",
+      "unit_cost": 382.6,
+      "value": 5739.0
+    },
+    {
+      "row": 27,
+      "layer_id": "OPEN-027",
+      "item": "52",
+      "name": "PCA300/2ml without button (TUOREN)",
+      "qty": 58.0,
+      "expiry_source": "28-06",
+      "unit_cost": 420.0,
+      "value": 24360.0
+    },
+    {
+      "row": 28,
+      "layer_id": "OPEN-028",
+      "item": "72",
+      "name": "trocar 7-10mm unimicro",
+      "qty": 104.0,
+      "expiry_source": "27-09",
+      "unit_cost": 760.0,
+      "value": 79040.0
+    },
+    {
+      "row": 29,
+      "layer_id": "OPEN-029",
+      "item": "75",
+      "name": "Exofin Topical Skin Adhesive 1g",
+      "qty": 276.0,
+      "expiry_source": "26-11",
+      "unit_cost": 560.0,
+      "value": 154560.0
+    },
+    {
+      "row": 30,
+      "layer_id": "OPEN-030",
+      "item": "90",
+      "name": "cannula 7-10mm unimicro",
+      "qty": 232.0,
+      "expiry_source": "27-09",
+      "unit_cost": 470.0,
+      "value": 109040.0
+    },
+    {
+      "row": 31,
+      "layer_id": "OPEN-031",
+      "item": "94",
+      "name": "trocar percion size 12mm",
+      "qty": 128.0,
+      "expiry_source": "26-08",
+      "unit_cost": 600.0,
+      "value": 76800.0
+    },
+    {
+      "row": 32,
+      "layer_id": "OPEN-032",
+      "item": "QELC",
+      "name": "Universal Endoscopic linear cutting stapler and single use loading unit",
+      "qty": 1.0,
+      "expiry_source": "26-11",
+      "unit_cost": 1.0,
+      "value": 1.0
+    },
+    {
+      "row": 33,
+      "layer_id": "OPEN-033",
+      "item": "QELC 6035B",
+      "name": "single use loading unit -60mm _3.5mm purple",
+      "qty": 1.0,
+      "expiry_source": "26-10",
+      "unit_cost": 1.0,
+      "value": 1.0
+    },
+    {
+      "row": 34,
+      "layer_id": "OPEN-034",
+      "item": "SA-14",
+      "name": "Sterile Applcator 14cm for surgy Spong",
+      "qty": 3.0,
+      "expiry_source": "27-07",
+      "unit_cost": 350.0,
+      "value": 1050.0
+    },
+    {
+      "row": 35,
+      "layer_id": "OPEN-035",
+      "item": "129",
+      "name": "Patient Ground_STRAP   (ONE CABLE)",
+      "qty": 1.0,
+      "expiry_source": "",
+      "unit_cost": 3000.0,
+      "value": 3000.0
+    },
+    {
+      "row": 36,
+      "layer_id": "OPEN-036",
+      "item": "70",
+      "name": "trocar 12mm unimicro",
+      "qty": 1083.0,
+      "expiry_source": "27-09",
+      "unit_cost": 880.0,
+      "value": 953040.0
+    },
+    {
+      "row": 37,
+      "layer_id": "OPEN-037",
+      "item": "70",
+      "name": "trocar 12mm unimicro",
+      "qty": 2000.0,
+      "expiry_source": "27-09",
+      "unit_cost": 895.0,
+      "value": 1790000.0
+    },
+    {
+      "row": 38,
+      "layer_id": "OPEN-038",
+      "item": "ESA60-2.6",
+      "name": "White reload 60mm",
+      "qty": 4.0,
+      "expiry_source": "28-02",
+      "unit_cost": 700.0,
+      "value": 2800.0
+    },
+    {
+      "row": 39,
+      "layer_id": "OPEN-039",
+      "item": "BATTERY",
+      "name": "stapler battery",
+      "qty": 18.0,
+      "expiry_source": "27-01",
+      "unit_cost": 292.0,
+      "value": 5256.0
+    },
+    {
+      "row": 40,
+      "layer_id": "OPEN-040",
+      "item": "115",
+      "name": "EEG Paste ( Cream ) Wave /250 gr",
+      "qty": 10.0,
+      "expiry_source": "27-07",
+      "unit_cost": 255.0,
+      "value": 2550.0
+    },
+    {
+      "row": 41,
+      "layer_id": "OPEN-041",
+      "item": "71",
+      "name": "cannula 12mm unimicro",
+      "qty": 378.0,
+      "expiry_source": "26-03",
+      "unit_cost": 520.0,
+      "value": 196560.0
+    },
+    {
+      "row": 42,
+      "layer_id": "OPEN-042",
+      "item": "30010",
+      "name": "Touren pca 300 multirate without button",
+      "qty": 10.0,
+      "expiry_source": "29-05",
+      "unit_cost": 431.81,
+      "value": 4318.1
+    },
+    {
+      "row": 43,
+      "layer_id": "OPEN-043",
+      "item": "17",
+      "name": "Panther blue reload 60 mm",
+      "qty": 1.0,
+      "expiry_source": "",
+      "unit_cost": 1280.0,
+      "value": 1280.0
+    },
+    {
+      "row": 44,
+      "layer_id": "OPEN-044",
+      "item": "19",
+      "name": "panther gold reload 60mm",
+      "qty": 9.0,
+      "expiry_source": "",
+      "unit_cost": 1400.0,
+      "value": 12600.0
+    }
+  ],
+  "reconciliation": [
+    {
+      "item": "2",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 3.0,
+      "flow_out": 3.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "3",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 16.0,
+      "flow_out": 16.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "5",
+      "name": "PCA100/4ML with button (TUOREN)",
+      "opening_qty": 15.0,
+      "flow_in": 5856.0,
+      "flow_out": 5841.0,
+      "flow_qty": 15.0,
+      "difference": 0.0,
+      "history_lines": 103
+    },
+    {
+      "item": "6",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1303.0,
+      "flow_out": 1303.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 58
+    },
+    {
+      "item": "13",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 3.0,
+      "flow_out": 3.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "17",
+      "name": "Panther blue reload 60 mm",
+      "opening_qty": 1.0,
+      "flow_in": 1.0,
+      "flow_out": 0.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "18",
+      "name": "Panther green reload 60mm",
+      "opening_qty": 3.0,
+      "flow_in": 3.0,
+      "flow_out": 0.0,
+      "flow_qty": 3.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "19",
+      "name": "panther gold reload 60mm",
+      "opening_qty": 9.0,
+      "flow_in": 9.0,
+      "flow_out": 0.0,
+      "flow_qty": 9.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "22",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "23",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "30",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 12.0,
+      "flow_out": 12.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "38",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "39",
+      "name": "PCA 100/2ml without button(TUOREN)",
+      "opening_qty": 2.0,
+      "flow_in": 141.0,
+      "flow_out": 139.0,
+      "flow_qty": 2.0,
+      "difference": 0.0,
+      "history_lines": 10
+    },
+    {
+      "item": "40",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 50.0,
+      "flow_out": 50.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "41",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 35.0,
+      "flow_out": 35.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 12
+    },
+    {
+      "item": "42",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 173.0,
+      "flow_out": 173.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 31
+    },
+    {
+      "item": "43",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 399.0,
+      "flow_out": 399.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 33
+    },
+    {
+      "item": "45",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 47.0,
+      "flow_out": 47.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 31
+    },
+    {
+      "item": "46",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 27.0,
+      "flow_out": 27.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 8
+    },
+    {
+      "item": "47",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 201.0,
+      "flow_out": 201.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "49",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 175.0,
+      "flow_out": 175.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 42
+    },
+    {
+      "item": "50",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "52",
+      "name": "PCA300/2ml without button (TUOREN)",
+      "opening_qty": 58.0,
+      "flow_in": 375.0,
+      "flow_out": 317.0,
+      "flow_qty": 58.0,
+      "difference": 0.0,
+      "history_lines": 8
+    },
+    {
+      "item": "53",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 66.0,
+      "flow_out": 66.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 7
+    },
+    {
+      "item": "64",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 4.0,
+      "flow_out": 4.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "65",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 31.0,
+      "flow_out": 31.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "68",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 48.0,
+      "flow_out": 48.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "70",
+      "name": "trocar 12mm unimicro",
+      "opening_qty": 3083.0,
+      "flow_in": 4896.0,
+      "flow_out": 1813.0,
+      "flow_qty": 3083.0,
+      "difference": 0.0,
+      "history_lines": 89
+    },
+    {
+      "item": "71",
+      "name": "cannula 12mm unimicro",
+      "opening_qty": 378.0,
+      "flow_in": 1738.0,
+      "flow_out": 1360.0,
+      "flow_qty": 378.0,
+      "difference": 0.0,
+      "history_lines": 54
+    },
+    {
+      "item": "72",
+      "name": "trocar 7-10mm unimicro",
+      "opening_qty": 104.0,
+      "flow_in": 1951.0,
+      "flow_out": 1847.0,
+      "flow_qty": 104.0,
+      "difference": 0.0,
+      "history_lines": 57
+    },
+    {
+      "item": "75",
+      "name": "Exofin Topical Skin Adhesive 1g",
+      "opening_qty": 276.0,
+      "flow_in": 1811.0,
+      "flow_out": 1535.0,
+      "flow_qty": 276.0,
+      "difference": 0.0,
+      "history_lines": 177
+    },
+    {
+      "item": "76",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 5.0,
+      "flow_out": 5.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "77",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 110.0,
+      "flow_out": 110.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 4
+    },
+    {
+      "item": "78",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 9.0,
+      "flow_out": 9.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 6
+    },
+    {
+      "item": "83",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 21.0,
+      "flow_out": 21.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 4
+    },
+    {
+      "item": "84",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 12.0,
+      "flow_out": 12.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "85",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 460.0,
+      "flow_out": 460.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "86",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 31.0,
+      "flow_out": 31.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "89",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 52.0,
+      "flow_out": 52.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 15
+    },
+    {
+      "item": "90",
+      "name": "cannula 7-10mm unimicro",
+      "opening_qty": 232.0,
+      "flow_in": 428.0,
+      "flow_out": 196.0,
+      "flow_qty": 232.0,
+      "difference": 0.0,
+      "history_lines": 11
+    },
+    {
+      "item": "91",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 509.0,
+      "flow_out": 509.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 6
+    },
+    {
+      "item": "92",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 345.0,
+      "flow_out": 345.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "94",
+      "name": "trocar percion size 12mm",
+      "opening_qty": 128.0,
+      "flow_in": 181.0,
+      "flow_out": 53.0,
+      "flow_qty": 128.0,
+      "difference": 0.0,
+      "history_lines": 16
+    },
+    {
+      "item": "96",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 18.0,
+      "flow_out": 18.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "97",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 20.0,
+      "flow_out": 20.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "100",
+      "name": "Surg-Spon Hemostatic Powder 1g",
+      "opening_qty": 203.0,
+      "flow_in": 317.0,
+      "flow_out": 114.0,
+      "flow_qty": 203.0,
+      "difference": 0.0,
+      "history_lines": 53
+    },
+    {
+      "item": "101",
+      "name": "Powered endoscopic stapler 60mm",
+      "opening_qty": 7.0,
+      "flow_in": 99.0,
+      "flow_out": 92.0,
+      "flow_qty": 7.0,
+      "difference": 0.0,
+      "history_lines": 86
+    },
+    {
+      "item": "102",
+      "name": "Surg-Spon Hemostatic Powder 3g",
+      "opening_qty": 59.0,
+      "flow_in": 61.0,
+      "flow_out": 2.0,
+      "flow_qty": 59.0,
+      "difference": 0.0,
+      "history_lines": 4
+    },
+    {
+      "item": "103",
+      "name": "Sterile Applcator 38m",
+      "opening_qty": 2.0,
+      "flow_in": 4.0,
+      "flow_out": 2.0,
+      "flow_qty": 2.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "104",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 35.0,
+      "flow_out": 35.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "105",
+      "name": "Blue reload 60mm",
+      "opening_qty": 920.0,
+      "flow_in": 7652.0,
+      "flow_out": 6732.0,
+      "flow_qty": 920.0,
+      "difference": 0.0,
+      "history_lines": 161
+    },
+    {
+      "item": "106",
+      "name": "Green reload 60mm",
+      "opening_qty": 380.0,
+      "flow_in": 3602.0,
+      "flow_out": 3222.0,
+      "flow_qty": 380.0,
+      "difference": 0.0,
+      "history_lines": 161
+    },
+    {
+      "item": "107",
+      "name": "Gold reload 60mm",
+      "opening_qty": 193.0,
+      "flow_in": 1700.0,
+      "flow_out": 1507.0,
+      "flow_qty": 193.0,
+      "difference": 0.0,
+      "history_lines": 127
+    },
+    {
+      "item": "108",
+      "name": "Black reload 60mm",
+      "opening_qty": 71.0,
+      "flow_in": 872.0,
+      "flow_out": 801.0,
+      "flow_qty": 71.0,
+      "difference": 0.0,
+      "history_lines": 101
+    },
+    {
+      "item": "109",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 230.0,
+      "flow_out": 230.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "110",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 31.0,
+      "flow_out": 31.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "111",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 10.0,
+      "flow_out": 10.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "112",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "113",
+      "name": "Panther black reload (CADA-60R5.0)",
+      "opening_qty": 1.0,
+      "flow_in": 1.0,
+      "flow_out": 0.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "114",
+      "name": "EEG Paste ( Cream ) Elektro / 200 gr",
+      "opening_qty": 2.0,
+      "flow_in": 43.0,
+      "flow_out": 41.0,
+      "flow_qty": 2.0,
+      "difference": 0.0,
+      "history_lines": 19
+    },
+    {
+      "item": "115",
+      "name": "EEG Paste ( Cream ) Wave /250 gr",
+      "opening_qty": 10.0,
+      "flow_in": 774.0,
+      "flow_out": 764.0,
+      "flow_qty": 10.0,
+      "difference": 0.0,
+      "history_lines": 41
+    },
+    {
+      "item": "116",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 4.0,
+      "flow_out": 4.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "117",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "118",
+      "name": "EEG Electrodes_PURE SILVER_1500mm  (Pack of 12)",
+      "opening_qty": 1.0,
+      "flow_in": 8.0,
+      "flow_out": 7.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 6
+    },
+    {
+      "item": "119",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "120",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "121",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "122",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "123",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "124",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "125",
+      "name": "Skin Preparation Gel (Neuprep) 100 gr",
+      "opening_qty": 3.0,
+      "flow_in": 6.0,
+      "flow_out": 3.0,
+      "flow_qty": 3.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "126",
+      "name": "Skin Preparation Gel (Neuprep)  150 gr",
+      "opening_qty": 5.0,
+      "flow_in": 10.0,
+      "flow_out": 5.0,
+      "flow_qty": 5.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "127",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "128",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "129",
+      "name": "Patient Ground_STRAP   (ONE CABLE)",
+      "opening_qty": 1.0,
+      "flow_in": 3.0,
+      "flow_out": 2.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "130",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "131",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "132",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "133",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "134",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "135",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "136",
+      "name": "EMG Needle holder",
+      "opening_qty": 1.0,
+      "flow_in": 7.0,
+      "flow_out": 6.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 13
+    },
+    {
+      "item": "137",
+      "name": "Oryx EMG Needle 5 cm disposable for neurophysiology ( yellow)",
+      "opening_qty": 7.0,
+      "flow_in": 778.0,
+      "flow_out": 771.0,
+      "flow_qty": 7.0,
+      "difference": 0.0,
+      "history_lines": 25
+    },
+    {
+      "item": "138",
+      "name": "Oryx EMG Needle 3.8 cm",
+      "opening_qty": 3.0,
+      "flow_in": 311.0,
+      "flow_out": 308.0,
+      "flow_qty": 3.0,
+      "difference": 0.0,
+      "history_lines": 17
+    },
+    {
+      "item": "139",
+      "name": "paste cream demo",
+      "opening_qty": 6.0,
+      "flow_in": 41.0,
+      "flow_out": 35.0,
+      "flow_qty": 6.0,
+      "difference": 0.0,
+      "history_lines": 43
+    },
+    {
+      "item": "140",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 4.0,
+      "flow_out": 4.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "141",
+      "name": "HEMO STATIC POWDER 2g",
+      "opening_qty": 33.0,
+      "flow_in": 143.0,
+      "flow_out": 110.0,
+      "flow_qty": 33.0,
+      "difference": 0.0,
+      "history_lines": 36
+    },
+    {
+      "item": "142",
+      "name": "PCA 275/5 ML With button (Fornia)",
+      "opening_qty": 1541.0,
+      "flow_in": 6842.0,
+      "flow_out": 5301.0,
+      "flow_qty": 1541.0,
+      "difference": 0.0,
+      "history_lines": 217
+    },
+    {
+      "item": "143",
+      "name": "PCA 100/2 ML With button (Fornia)",
+      "opening_qty": 1651.0,
+      "flow_in": 3133.0,
+      "flow_out": 1482.0,
+      "flow_qty": 1651.0,
+      "difference": 0.0,
+      "history_lines": 58
+    },
+    {
+      "item": "144",
+      "name": "PCA 100/4 ML With button (Fornia)",
+      "opening_qty": 1921.0,
+      "flow_in": 9393.0,
+      "flow_out": 7472.0,
+      "flow_qty": 1921.0,
+      "difference": 0.0,
+      "history_lines": 97
+    },
+    {
+      "item": "30010",
+      "name": "Touren pca 300 multirate without button",
+      "opening_qty": 10.0,
+      "flow_in": 11.0,
+      "flow_out": 1.0,
+      "flow_qty": 10.0,
+      "difference": 0.0,
+      "history_lines": 3
+    },
+    {
+      "item": "BATTERY",
+      "name": "stapler battery",
+      "opening_qty": 18.0,
+      "flow_in": 25.0,
+      "flow_out": 7.0,
+      "flow_qty": 18.0,
+      "difference": 0.0,
+      "history_lines": 5
+    },
+    {
+      "item": "CSS29",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 1.0,
+      "flow_out": 1.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "E3147P",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 10.0,
+      "flow_out": 10.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "E6149L",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 25.0,
+      "flow_out": 25.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "E7185",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 20.0,
+      "flow_out": 20.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "ECR60PC",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "ESA60-2.6",
+      "name": "White reload 60mm",
+      "opening_qty": 4.0,
+      "flow_in": 4.0,
+      "flow_out": 0.0,
+      "flow_qty": 4.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "H5137",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "HF5137",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "PEN102828",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 57.0,
+      "flow_out": 57.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 2
+    },
+    {
+      "item": "QELC",
+      "name": "Universal Endoscopic linear cutting stapler and single use loading unit",
+      "opening_qty": 1.0,
+      "flow_in": 1.0,
+      "flow_out": 0.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "QELC 6035B",
+      "name": "single use loading unit -60mm _3.5mm purple",
+      "opening_qty": 1.0,
+      "flow_in": 1.0,
+      "flow_out": 0.0,
+      "flow_qty": 1.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "SA-14",
+      "name": "Sterile Applcator 14cm for surgy Spong",
+      "opening_qty": 3.0,
+      "flow_in": 3.0,
+      "flow_out": 0.0,
+      "flow_qty": 3.0,
+      "difference": 0.0,
+      "history_lines": 1
+    },
+    {
+      "item": "TCTX4221-M",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    },
+    {
+      "item": "TCTX7221-L",
+      "name": "",
+      "opening_qty": 0.0,
+      "flow_in": 0.0,
+      "flow_out": 0.0,
+      "flow_qty": 0.0,
+      "difference": 0.0,
+      "history_lines": 0
+    }
+  ],
+  "totals": {
+    "source_rows": 43,
+    "source_items": 41,
+    "quantity": 11347.0,
+    "value": 6592366.54,
+    "reconciliation_items": 106,
+    "mismatches": 0,
+    "missing_expiry_rows": 12,
+    "zero_cost_rows": 1
+  },
+  "issues": []
+}

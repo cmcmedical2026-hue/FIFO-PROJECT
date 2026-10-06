@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    41,
+    11347,
+    6592366.54,
+    43,
+    31,
+    12,
+    1,
+    0
+  ],
+  "reconciliation_rows": 106,
+  "all_differences_zero": true,
+  "formula_errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

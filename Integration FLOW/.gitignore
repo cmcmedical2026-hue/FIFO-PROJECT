@@ -1,0 +1,17 @@
+# HAR captures hold the tenant password in clear text. Never commit one.
+*.har
+har/*.zip
+har/**/*.har
+
+# Local credentials
+.env
+
+# Run artefacts
+runs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

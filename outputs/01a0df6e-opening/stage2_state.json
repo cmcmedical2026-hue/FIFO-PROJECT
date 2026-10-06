@@ -1,0 +1,185 @@
+{
+  "stage": 2,
+  "status": "completed_with_user_corrections",
+  "spreadsheet_id": "1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44",
+  "url": "https://docs.google.com/spreadsheets/d/1TQtVUU3Ao-gZJLRsV4n8_HPXhV0XkBDng9VuuwI-k44/edit",
+  "scope": {
+    "company": 1,
+    "store": 1,
+    "from": "2026-01-01",
+    "to": "2026-02-28"
+  },
+  "verification": {
+    "movement_lines": 194,
+    "january_lines": 114,
+    "february_lines": 80,
+    "january_in": 172,
+    "january_out": 2731,
+    "january_end": 8788,
+    "february_in": 5706,
+    "february_out": 4071,
+    "february_end": 10423,
+    "count_rows": 60,
+    "count_codes": 42,
+    "count_qty": 10423,
+    "flow_month_end_item_differences": 0,
+    "physical_count_item_differences": {},
+    "sheet_formula_errors": 0
+  },
+  "flow_modified": false,
+  "source_modified": false,
+  "approved_corrections": [
+    "QELC-605B in the physical count is the same item as QELC 6035B; use QELC 6035B.",
+    "All February count rows for item 70 use expiry 2027-09; 2026-03-08 is cancelled."
+  ],
+  "visible_stage2_tabs": [
+    "حركات يناير",
+    "حركات فبراير",
+    "جرد ٢٨-٠٢"
+  ],
+  "summary_status": "January and February populated with formulas from their monthly movement sheets and verified against an independent local cost rollforward",
+  "reconciliation_presentation": "chat_only; all reconciliation tabs and their hidden dependent dashboard/helper tabs removed from the Google Sheet",
+  "open_questions": [],
+  "cost_scope": "Actual incoming Flow STRIN2 ITPRICE/pr; all calculated costs use opening/purchase sheet cells by item, lot and expiry. Flow COST is never used.",
+  "summary": {
+    "cogs_qty_definition": "distinct STROUT document count",
+    "returns_qty_definition": "distinct STRMRT document count",
+    "sample_qty_definition": "distinct STRMAK document count",
+    "sample_return_qty_definition": "distinct STRMR document count",
+    "purchase_qty_definition": "distinct STRIN2 document count",
+    "total_definition": "monthly sum of movement cost formulas from each monthly sheet, not Flow average cost",
+    "sample_cost_basis": "STRMAK issues consume opening or purchased cost layers; STRMR 44 links to STRMAK 193 before opening and uses the opening layer, STRMR 45 links to STRMAK 199, and STRMR 46 links to STRMAK 203 at the original issue layer cost",
+    "january": {
+      "cogs": 1372599.99,
+      "sales_documents": 47,
+      "sales_returns_cost": 68245.0,
+      "sales_return_documents": 6,
+      "samples_cost": 33870.0,
+      "sample_documents": 5,
+      "sample_returns_cost": 4240.0,
+      "sample_return_documents": 2,
+      "purchases_cost": 248843.0,
+      "purchase_documents": 4
+    },
+    "february": {
+      "cogs": 2666949.0,
+      "sales_documents": 27,
+      "sales_returns_cost": 109421.5,
+      "sales_return_documents": 9,
+      "samples_cost": 23175.0,
+      "sample_documents": 4,
+      "sample_returns_cost": 20200.0,
+      "sample_return_documents": 1,
+      "purchases_cost": 4008360.0,
+      "purchase_documents": 2
+    }
+  },
+  "cost_rule_date": "2026-09-28",
+  "cost_methodology": "Actual incoming Flow STRIN2 ITPRICE/pr; all calculated costs use opening/purchase sheet cells by item, lot and expiry. Flow COST is never used.",
+  "cost_correction_verified": true,
+  "cost_correction_report": "outputs/cost-rule-2026-09-28/correction.json",
+  "movement_columns": 20,
+  "lot_expiry_columns_added": true,
+  "cost_correction_summary": {
+    "2026-01:STRIN9": {
+      "lines": 8,
+      "qty": 43.0,
+      "value": 30020.0,
+      "missing": 1,
+      "docs": 4
+    },
+    "2026-01:STROUT": {
+      "lines": 74,
+      "qty": 2666.0,
+      "value": 1372599.99,
+      "missing": 0,
+      "docs": 47
+    },
+    "2026-01:STRMAK": {
+      "lines": 11,
+      "qty": 35.0,
+      "value": 33870.0,
+      "missing": 0,
+      "docs": 5
+    },
+    "2026-01:STROU9": {
+      "lines": 7,
+      "qty": 30.0,
+      "value": 29450.0,
+      "missing": 0,
+      "docs": 6
+    },
+    "2026-01:STRMR": {
+      "lines": 2,
+      "qty": 10.0,
+      "value": 4240.0,
+      "missing": 0,
+      "docs": 2
+    },
+    "2026-01:STRMRT": {
+      "lines": 8,
+      "qty": 74.0,
+      "value": 68245.0,
+      "missing": 0,
+      "docs": 6
+    },
+    "2026-01:STRIN2": {
+      "lines": 4,
+      "qty": 45.0,
+      "value": 248843.0,
+      "missing": 0,
+      "docs": 4
+    },
+    "2026-02:STROU9": {
+      "lines": 10,
+      "qty": 42.0,
+      "value": 41720.0,
+      "missing": 0,
+      "docs": 7
+    },
+    "2026-02:STROUT": {
+      "lines": 34,
+      "qty": 4010.0,
+      "value": 2666949.0,
+      "missing": 0,
+      "docs": 27
+    },
+    "2026-02:STRIN9": {
+      "lines": 9,
+      "qty": 11.0,
+      "value": 5825.0,
+      "missing": 1,
+      "docs": 2
+    },
+    "2026-02:STRMRT": {
+      "lines": 9,
+      "qty": 253.0,
+      "value": 109421.5,
+      "missing": 0,
+      "docs": 9
+    },
+    "2026-02:STRIN2": {
+      "lines": 5,
+      "qty": 5430.0,
+      "value": 4008360.0,
+      "missing": 0,
+      "docs": 2
+    },
+    "2026-02:STRMAK": {
+      "lines": 8,
+      "qty": 19.0,
+      "value": 23175.0,
+      "missing": 0,
+      "docs": 4
+    },
+    "2026-02:STRMR": {
+      "lines": 5,
+      "qty": 12.0,
+      "value": 20200.0,
+      "missing": 0,
+      "docs": 1
+    }
+  },
+  "approved_cost_decisions_verified": true,
+  "approved_cost_decisions_report": "outputs/approved-batch-decisions-2026-09-28/audit.json"
+}

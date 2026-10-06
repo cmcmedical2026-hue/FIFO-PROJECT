@@ -1,0 +1,10 @@
+{
+  "_doc": "How scripts/lot_ledger.py rebuilds the Mokattam-1 lot ledger. Opening balance, then each physical count in date order is a checkpoint where lots are re-anchored (item totals must agree; totals that differ are reported, never forced).",
+  "cono": "1",
+  "strno": "1",
+  "catalog": "lot_catalog.json",
+  "overrides": "overrides.json",
+  "purchase_costs": "purchase_costs.json",
+  "opening": "opening_2026-05-02.json",
+  "checkpoints": ["count_2026-06-30.json", "count_2026-08-31.json"]
+}

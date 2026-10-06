@@ -1,0 +1,25 @@
+{
+  "sql": "select m.DOCNO return_doc, q.DOCNO return_request, q.SRCDOCNO issue_doc from trnhdr m join trnhdr q on q.CONO=m.CONO and q.STRNO=m.STRNO and q.OPCODE='STRMRS' and q.DOCNO=m.SRCDOCNO where m.CONO=1 and m.STRNO=1 and m.OPCODE='STRMR' and m.STS='A' and q.STS='A' and m.DOCDT>='2026-01-01' and m.DOCDT<='2026-02-28'",
+  "rows": [
+    {
+      "return_doc": 44,
+      "return_request": 44,
+      "issue_doc": 193
+    },
+    {
+      "return_doc": 45,
+      "return_request": 45,
+      "issue_doc": 199
+    },
+    {
+      "return_doc": 46,
+      "return_request": 46,
+      "issue_doc": 203
+    }
+  ],
+  "links": {
+    "44": 193,
+    "45": 199,
+    "46": 203
+  }
+}

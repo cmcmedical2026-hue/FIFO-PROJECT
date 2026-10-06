@@ -1,0 +1,53 @@
+نحن نعمل على Flow ERP الخاص بالشركة على:
+https://erp.mcbs-global.com/
+
+تفضيلات المستخدم:
+- التنفيذ باستخدام Python فقط، بدون Browser.
+- يمكن استخدام بيانات الدخول من ملفات HAR المصرّح بها، بدون طباعة credentials أو API keys.
+- راجع المهارات:
+  - flow-erp
+  - flow-erp-inventory
+  - flow-erp-production-issue
+  - flow-erp-sales
+- ملفات HAR:
+  - C:\Users\hp\Downloads\Sales Order.har
+  - C:\Users\hp\Downloads\Sales request.har
+
+قواعد مهمة:
+- Production Issue هو Inventory opcode = STROUT.
+- يجب التأكد أن STROUT مصدره SALORD.
+- افحص أمر البيع والمخزون والإذون المرتبطة قبل أي Save.
+- لا تنشئ Production Issue مكررًا إذا كان موجودًا بالفعل.
+- احفظ مرة واحدة فقط، ثم اعمل GETDOC للتحقق من الرقم والحالة والمصدر والكميات والـ Remarks.
+- عند وجود lot/expiry، في هذا النظام تم تسجيلها في Remarks بصيغة واضحة لكل صنف.
+- لا تعمل Post إلا إذا طلب المستخدم صراحة.
+- إذا كانت نتيجة Save غير مؤكدة، اعمل فحصًا read-only ولا تعيد الإرسال تلقائيًا.
+
+ما تم سابقًا:
+- Sales Request 997 وSales Order 987 تم حذفهما منطقيًا وحالتهما D.
+- Production Issue لأمر البيع 989 الخاص بالعميل د. أحمد جبر، customer CNO=49:
+  - Production Issue رقم 975
+  - STS=A وPOST=Y
+  - المصدر SALORD 989
+  - item 105 qty 2 — lot 36112025004 — expiry 22/03/2028
+  - item 107 qty 2 — lot 36122025001 — expiry 08/01/2028
+  - item 108 qty 1 — lot 36142025001 — expiry 07/01/2028
+  - Remarks:
+    (105) 22/3/2028 36112025004
+    (107) 8/1/2028 36122025001
+    (108) 7/1/2028 36142025001
+
+- Production Issue لأمر البيع 988 الخاص بالعميل د. محمد علاء، customer CNO=346:
+  - Production Issue رقم 976
+  - STS=A وPOST=Y
+  - المصدر SALORD 988
+  - item 6 qty 5 — lot 250620 — expiry 19/06/2030
+  - Remarks:
+    250620 19/6/2030
+
+ملاحظة مهمة:
+تم التأكد أن الإذنين 975 و976 محفوظان بالفعل، لذلك يجب عدم إنشاء نسخ جديدة. ملفات الفحص الموجودة:
+- work\flow_production_issue_preflight.py
+- work\flow_production_issue_existing.py
+
+إذا طلب المستخدم عملية جديدة، حدد أمر البيع برقم واضح أو اربطه بالعميل والتاريخ والأصناف، وافحص الإذن المرتبط قبل الحفظ.

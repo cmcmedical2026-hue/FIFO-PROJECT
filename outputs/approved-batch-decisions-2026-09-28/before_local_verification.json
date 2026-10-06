@@ -1,0 +1,13 @@
+{
+  "formula_checks": 838,
+  "unresolved_cost_lines": 18,
+  "purchase_price_matches": 56,
+  "quantity_lines_preserved": 856,
+  "no_circular_cost_formulas": true,
+  "source_sha256": {
+    "Source file/Opening balance 2026.csv": "80929222bec974009ce16776628ae7b8ba6d217c997bacae3229fcf9b772c88f",
+    "Source file/جرد 31-08-2026.csv": "eef4206f95c8734d256d0edc7784b8265c96b7477980b4dbc501443ac57f1c99",
+    "Source file/جرد 28-02-2026.csv": "efbb6f3c53834ae11b93b52f1a6a2963f493df890cb7f68cba0076852102e360",
+    "Source file/جرد_30-06-2026 .csv": "9bf0a065ed5bcb99496632603a41ab15fbcd133a261feacfd02bcf0a54207160"
+  }
+}

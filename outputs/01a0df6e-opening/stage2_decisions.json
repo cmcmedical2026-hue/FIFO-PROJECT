@@ -1,0 +1,13 @@
+{
+  "approved_on": "2026-09-27",
+  "count_item_code_corrections": {
+    "QELC-605B": "QELC 6035B"
+  },
+  "count_expiry_corrections": {
+    "70": "2027-09"
+  },
+  "notes": [
+    "QELC 6035B is the correct code; QELC-605B in the February count was a spelling error.",
+    "Item 70 expiry is September 2027 (27-09), including all four February count rows; 2026-03-08 is cancelled. The original CSV stays unchanged."
+  ]
+}
